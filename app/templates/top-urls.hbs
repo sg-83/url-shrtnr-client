@@ -1,13 +1,14 @@
 <div class="container">
-  <div class="page-header">
-    <h1>Top 100</h1>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h1>Top 100 URLs</h1>
+    </div>
+    <div class="panel-body">
+      <ol class="">
+        {{#each model as |url| }}
+          <li class=""><h4><a href={{url.url}}>{{url.title}}</a></h4></li>
+        {{/each}}
+      </ol>
+    </div>
   </div>
-
-  <ul>
-    {{#each model as |url| }}
-      <li>{{url.title}}</li>
-    {{/each}}
-  </ul>
-
-  {{outlet}}
 </div>

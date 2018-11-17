@@ -9,7 +9,7 @@ export default Controller.extend({
     createURL() {
       this.set('errors', undefined);
       $.ajax({
-        url: 'http://localhost:3000',
+        url: 'https://url-shrtnr-app.herokuapp.com',
         method: 'POST',
         data: {
           url: this.get('fullURL')
