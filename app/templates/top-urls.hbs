@@ -6,7 +6,7 @@
     <div class="panel-body">
       <ol class="">
         {{#each model as |url| }}
-          <li class=""><h4><a href={{url.url}}>{{url.title}}</a></h4></li>
+          <li class=""><h4><a rel="noopener" target="_blank" href={{url.url}}>{{url.title}}</a></h4></li>
         {{/each}}
       </ol>
     </div>
