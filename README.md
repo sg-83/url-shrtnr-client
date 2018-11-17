@@ -1,57 +1,12 @@
-# web-client
+# URL Shortner Client app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Written using Ember.js and hosted on github pages [here](https://sg-83.github.io/url-shrtnr-client).
 
-## Prerequisites
+I went with hash based locations so that this
+can be deployed to github pages, where I don't have control of their
+routing logic. If I wanted to make this app use traditional locations,
+I'd need to put this on an actual web server, and configure it to return
+index.html for all paths.
 
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd web-client`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+As part of this work the API app was updated to use the DelayedJob
+backend, and a worker Dyno was added on heroku.
