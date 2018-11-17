@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="page-header">
+    <h1>URLshrtnr</h1>
+  </div>
+
+  <form class="well" {{action "createURL" fullUrL on="submit"}}>
+    <div class="form-group">
+      <label for="fullURL">Full URL</label>
+      {{input 
+        required="true"
+        type="url"
+        name="fullURL"
+        class="form-control"
+        value=fullURL
+      }}
+    </div>
+    <button type="submit" class="btn btn-primary">Shorten!</button>
+  </form>
+</div>
